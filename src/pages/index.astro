@@ -1,5 +1,8 @@
 ---
 import { Counter } from "../components/counter";
+import { Island } from "../components/random-island";
+
+const initialVal = 5;
 ---
 
 <html lang="en">
@@ -12,7 +15,7 @@ import { Counter } from "../components/counter";
 	</head>
 	<body>
 		<h1>Astro</h1>
-		<Counter />
-		<Counter />
+		<Counter initialVal={initialVal} />
+		<Island initialVal={initialVal} />
 	</body>
 </html>
